@@ -1,23 +1,47 @@
 * {
     margin: 0;
     padding: 0;
+} /* Con esto limpio todos los estilos*/
+
+/*
+display: flex activa el modelo flexible en el contenedor.
+flex-direction: row (por defecto) organiza los elementos en una fila horizontal.
+justify-content: center;  Centra los elementos horizontalmente
+Centra los elementos verticalmente
+
+
+COLORES: Puedo poner los colores como variables y usarlos directamente poniendo el nombre (Ver JavaS o CSS)
+*/
+
+
+body {
+    background-color: antiquewhite;  /* Pongo un color sutil para tener en todo el documento*/
 }
+
 
 header, nav, main, footer {
     padding: 25px;
-}
+} /* Con esto todos los contenedores tienen la misma tabulacion. Despues lo puedo ir ajustando */
 
 header, footer, main {
     text-align: center;
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #000000;
-    min-height: 10vh;
+    /*min-height: 10vh;*/
     color: #ffffff;
   }
 
+header img {
+    height: 70px;
+}
+
 nav {
+    display: flex;
     background-color: #242627;
     justify-content: space-between;
     align-items: center;
@@ -30,26 +54,26 @@ nav img {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Con esto me borra los puntitos de la lista*/
     display: flex;
 }
 
-nav a {
-    text-decoration: none;
+a {
+    text-decoration: none; /* Para que no se subrayen los links*/
 }
 
-.button {
+.button { /* Voy a usar un solo tipo de boton, lo aplico poniendo class en el HTML*/
     background-color:#835aa5;
     color: #f3f7f6;
-    padding: 10px;
+    padding: 10px; /* Para darle margen*/
     
-    margin-right: 10px;
-    border-radius: 5px;
-    border-top-right-radius: 15px;
-    transition: 0.3s all;
+    margin-right: 10px; /* Para que tenga el efecto de separacion entre sí */
+    border-radius: 5px; /* Redondeo los bordes*/
+    border-top-right-radius: 15px; /* Le suma un poco mas a ese borde para darle efecto */
+    transition: 0.3s all; /* el efecto de transicion */
 }
 
-.button:hover {
+.button:hover { /* El hover es para cuando le pongo el mouse encima */
     background-color: #ffad01;
     color: #000000; 
     border-radius: 5px;
@@ -57,25 +81,34 @@ nav a {
 }
 
 main {
+    padding: 0; /* Saca el padding para ponerselo a los contenedores hijos */
     background-color: #835aa5;
   }
   
-main h2, h3 {
-    background-color: #835aa5;
+main h3 { /* Diferencio de h2 para romper las bolas */
+    background-color: #360856;
     color: #f3f7f6;
 }
 
+main h2 {
+    background-color: #f9aa25;
+    color: #f3f7f6;
+}
 
-#Ofertas {
+#mycarrousel {
+    min-height: 50vh; /* tamaño minimo del 50% de la pagina */
+}
+
+main #Ofertas {
     background-color: #030005;
 }
 
 
-#Productos h2 {
-    padding: 15px 25px;
+main #Productos h2 {
+    padding: 15px 25px; /* Alto - Costados */
 }
 
-#Productos .contenido {
+main #Productos .contenido {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -83,32 +116,32 @@ main h2, h3 {
     padding: 25px;
 }
 
-#Productos .contenido article {
+main #Productos .contenido article {
     color:#a296ac;
     background-color: #171D1C;
     padding: 15px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* para que sus elementos se pongan en columna */
 }
 
-#Productos .contenido article h4 {
+main #Productos .contenido article h4 {
     font-size: 2em;
     padding: 15px 0;
 }
 
 
 footer {
-    color: #a296ac;
-    background-color: #171D1C;
-
     display: flex;
     justify-content: space-between ;
     align-items: center;
+
+    color: #a296ac;
+    background-color: #171D1C;
 }
 
 footer .redes {
-    font-size: 1.5em;
+    font-size: 1.5em; /* Agranda los iconos mediante la clase redes por herencia */
 }
 
 footer .redes i {

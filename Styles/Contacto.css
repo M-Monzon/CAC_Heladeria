@@ -38,7 +38,12 @@ header {
     border: none;
 }
 
-  footer {
+#Maps {
+    width: 100%;
+    height: 400px;
+}
+
+footer {
     color: #a296ac;
     background-color: #171D1C;
 
