@@ -3,22 +3,32 @@
     background-color: rgba(255, 255, 255, 0);
 }
 
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+
 #somos {
     display: flex;
-    background-image: url(../Src/img/Fondo-contactos.png);
+    flex-direction: column;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     max-width: 80%;
+    border: 5px solid #ffad01;
 }
 
 p {
     background-color: rgba(255, 255, 255, 0);
     display: flex;
     text-align: center;
-    color: #ffad01;              /* Cambia el color del texto a azul */
+    color: #171D1C;              /* Cambia el color del texto a azul */
     font-size: 18px;           /* Cambia el tamaño del texto a 18px */
     margin-top: 20px;          /* Agrega un margen superior de 20px */
     padding: 20px;             /* Agrega un padding de 10px alrededor del párrafo */
-    border: 2px solid #ffffff;   /* Agrega un borde de 1px sólido negro alrededor del párrafo */
+       /* Agrega un borde de 1px sólido negro alrededor del párrafo */
 }
   

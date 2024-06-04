@@ -24,7 +24,7 @@
     <a href="#">
       <img src="Src/img/Logo.png" alt="logo"> <!-- Imagen del Logo  -->
     </a>
-    <h1>Heladeria del SUR</h1> <!-- Título -->
+    <h1>Heladeria del SUR</h1>
     <a class="button" id="login">Login</a> <!-- Login -->
   </header>
 
@@ -33,7 +33,7 @@
   <nav class="Barra"> <!-- Siempre se pone una lista -->
     <ul>
       <li><a class="button" href="#Inicio">Inicio</a></li> <!-- Como son botones hipervinculos le ponemos adentro un a -->
-      <li><a class="button" href="Pages/Compras.html">Comprar</a></li>
+      <li><a class="button" href="#Ubicacion">Sucursales</a></li>
       <li><a class="button" href="Pages/Somos.html">¿Quienes somos?</a></li>
       <li><a class="button" href="Pages/Contacto.html">Contacto</a></li>
     </ul>
@@ -45,7 +45,7 @@
     <!-- Seccion 1: Novedades/Carrusel -->
 
     <section id="myCarousel" class="carousel slide" data-ride="carousel">
-      <h3>NOVEDADES</h3>
+      <h2>NOVEDADES</h2>
       <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
           <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -72,13 +72,9 @@
       </a>
     </section>
   
-    <!-- Seccion 2: Ofertas -->
-
-    <!-- Para que la imagen me lleve a otro lado puedo reemplazar al articulo por el a -->
-    <section id="Ofertas">
-      <h2>OFERTAS</h2> 
-      <section id="Productos"> <!-- Esta es una subseccion, podria ponerla directamente como seccion -->
-        <div class="contenido">
+    <section id="Productos"> 
+      <h2>OFERTAS</h2>   
+      <div class="contenido">
           <a href="Pages/Compras.html"><article>
             <img src="src/img/Ofertas.webp" alt="Producto">
             <h4>1/4 Kg. Helado</h4>
@@ -92,7 +88,7 @@
           <a href="Pages/Compras.html"><article>
             <img src="src/img/Ofertas.webp" alt="Producto">
             <h4>1 Kg. Helado</h4>
-            <p>Comprá 1 y 1/2 gratis</p>
+            <p>Comprá 1 y llevate 1/2 gratis</p>
           </article></a>
           <a href="Pages/Compras.html"><article>
             <img src="src/img/Ofertas.webp" alt="Producto">
@@ -100,8 +96,22 @@
             <p>Compra 2 y llevate 4</p>
           </article></a>
         </div>
-      </section>
+    </section>
 
+    <section id="Ubicacion">
+        <h2>SUCURSALES</h2>
+        <div>
+          <button class="button" id="suc1">Sucursal La Boca</button>
+          <button class="button" id="suc2">Sucursal San Telmo</button>
+          <button class="button" id="suc3">Sucursal Barracas</button>
+        </div>
+        <article id="Sucursales">
+          <img src="" alt="">
+          <p></p>
+        </article>
+        <div id="Contenedor"></div>
+    </section>
+  
   </main>
         
   <footer>
@@ -115,6 +125,9 @@
         <a href="https://twitter.com/?lang=es"><i class='bx bxl-twitter'></i></a>
       </div>
   </footer>
+
+
+  <script src="JS/Sucursales.js"></script>
 
 </body>
 </html>

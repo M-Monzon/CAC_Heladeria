@@ -14,9 +14,7 @@ original.remove() // Clono y elimino el original
 //Funciones
 
 function fsuc1() {
-    let contenedor = document.querySelector("#Contenedor");
-
-    fetch("https://M-Monzon.github.io/CAC_Proyecto/datos.json")
+     fetch("https://M-Monzon.github.io/CAC_Proyecto/datos.json")
     .then(response => response.json()) // Convierte a JSON
     .then(data => { 
         // Procesamiento de la info que llega de la API
@@ -37,8 +35,6 @@ function fsuc1() {
 }
 
 function fsuc2() { 
-    let contenedor = document.querySelector("#Contenedor");
-    
     fetch("https://M-Monzon.github.io/CAC_Proyecto/datos.json")
     .then(response => response.json()) // Convierte a JSON
     .then(data => { 
@@ -60,8 +56,6 @@ function fsuc2() {
 }
 
 function fsuc3() {
-    let contenedor = document.querySelector("#Contenedor");
-
     fetch("https://M-Monzon.github.io/CAC_Proyecto/datos.json")
     .then(response => response.json()) // Convierte a JSON
     .then(data => { 
@@ -69,7 +63,7 @@ function fsuc3() {
         console.log(data);
 
         console.log("Acercate a " + data.Sucursal3[1] + " en el famoso Barrio de " + data.Sucursal3[0]) //Direccion
-        console.log(data.img3) //Imagen
+        console.log(data.img3); //Imagen
 
         let Sucursal3 = referencia.cloneNode(true);
 

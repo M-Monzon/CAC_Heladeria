@@ -51,7 +51,7 @@ nav {
     z-index: 2
 }
 
-nav ul {
+ul {
     display: flex;
     list-style-type: none; /* Con esto me borra los puntitos de la lista*/
 }
@@ -92,14 +92,10 @@ a {
 main {
     display: flex;
     flex-direction: column;
-    padding: 0; /* Saca el padding para ponerselo a los contenedores hijos */
+    padding: 20px;
+    align-items: center;
     background-color: #835aa5;
   }
-  
-main h3 { /* Diferencio de h2 para romper las bolas */
-    background-color: #360856;
-    color: #f3f7f6;
-}
 
 main h2 {
     background-color: #360856;
@@ -111,21 +107,16 @@ main h2 {
     z-index: 1
 }
 
-main #Ofertas {
+main #Productos {
     background-color: #030005;
-}
-
-main 
-
-main #Productos h2 {
-    padding: 15px 25px; /* Alto - Costados */
+    
 }
 
 main #Productos .contenido {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 20px;
 }
 
 main #Productos .contenido article {
@@ -134,6 +125,7 @@ main #Productos .contenido article {
     color:#a296ac;
     background-color: #171D1C;
     padding: 15px;
+    font-size: 1em;
 
     display: flex;
     flex-direction: column; /* para que sus elementos se pongan en columna */
@@ -147,6 +139,37 @@ main #Productos .contenido article img {
 main #Productos .contenido article h4 {
     font-size: 2em;
     padding: 15px 0;
+}
+
+
+#Sucursales {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    background-color:#360856;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    color: #ffad01;
+}
+
+article img {
+    border-radius: 999px;
+    max-width: 90%;
+}
+article p {
+    text-align: center;
+}
+
+#Contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -173,7 +196,52 @@ footer .redes i:hover {
 }
 
 
+@media only screen and (max-width: 480px){
+    header, main, footer {
+        padding:10px;
+    }
 
+    body {
+        font-size: 10px;
+    }
+
+    section {
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 480px){
+    header, main, footer {
+        padding:15px;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    section {
+        width: 90%;
+    }
+    
+    .contenido article{
+        width: 70%;
+    
+    }
+}
+
+@media only screen and (min-width: 768px){
+    header, main, footer {
+        padding:25px;
+    }
+
+    body {
+        font-size: 24px;
+    }
+
+    section {
+        width: 90%;
+    }
+}
 
 
 
