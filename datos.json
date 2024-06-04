@@ -1,0 +1,19 @@
+{	
+	"Sucursal1": [
+        "La Boca",
+        "Almirante Brown 567"
+    ],
+    "Sucursal2": [
+        "San Telmo",
+        "Defensa 1234"
+    ],
+    "Sucursal3": [
+        "Barracas",
+        "Montes de Oca 2345"
+    ],
+
+    "img1": "CAC_Proyecto/Src/img/img_sucursal1.jpg",
+    "img2": "CAC_Proyecto/Src/img/img_sucursal1.jpg",
+    "img3": "CAC_Proyecto/Src/img/img_sucursal3.jpg"
+}
+
