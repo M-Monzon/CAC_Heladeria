@@ -4,15 +4,8 @@
 } /* Con esto limpio todos los estilos*/
 
 /*
-display: flex activa el modelo flexible en el contenedor.
-flex-direction: row (por defecto) organiza los elementos en una fila horizontal.
-justify-content: center;  Centra los elementos horizontalmente
-Centra los elementos verticalmente
-
-
 COLORES: Puedo poner los colores como variables y usarlos directamente poniendo el nombre (Ver JavaS o CSS)
 */
-
 
 body {
     background-color: antiquewhite;  /* Pongo un color sutil para tener en todo el documento*/
@@ -183,7 +176,7 @@ footer {
 }
 
 footer .redes {
-    font-size: 1.5em; /* Agranda los iconos mediante la clase redes por herencia */
+    font-size: 1.5em;
 }
 
 footer .redes i {
@@ -224,18 +217,18 @@ footer .redes i:hover {
     }
     
     .contenido article{
-        width: 70%;
+        width: 60%;
     
     }
 }
 
 @media only screen and (min-width: 768px){
     header, main, footer {
-        padding:25px;
+        padding:20px;
     }
 
     body {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     section {
