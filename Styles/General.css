@@ -16,6 +16,7 @@ COLORES: Puedo poner los colores como variables y usarlos directamente poniendo 
 
 body {
     background-color: antiquewhite;  /* Pongo un color sutil para tener en todo el documento*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Pongo una fuente generica para todo el documento */
 }
 
 
@@ -71,9 +72,22 @@ a {
 
 .button:hover { /* El hover es para cuando le pongo el mouse encima */
     background-color: #ffad01;
-    color: #000000; 
+    color: #360856; 
     border-radius: 5px;
 }
+
+#login {
+    background-color: #ffad01;
+    color: #360856;
+    border-radius: 5px;
+}
+
+#login:hover {
+    background-color: #835aa5;
+    color: #f3f7f6;
+}
+
+
 
 main {
     display: flex;
@@ -101,6 +115,7 @@ main #Ofertas {
     background-color: #030005;
 }
 
+main 
 
 main #Productos h2 {
     padding: 15px 25px; /* Alto - Costados */
@@ -110,17 +125,23 @@ main #Productos .contenido {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
     padding: 25px;
 }
 
 main #Productos .contenido article {
+    padding: 10px;
+    justify-content: space-between;
     color:#a296ac;
     background-color: #171D1C;
     padding: 15px;
 
     display: flex;
     flex-direction: column; /* para que sus elementos se pongan en columna */
+}
+
+main #Productos .contenido article img {
+    width: 100%;
+    height: 100px;
 }
 
 main #Productos .contenido article h4 {
