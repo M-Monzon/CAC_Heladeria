@@ -1,18 +1,20 @@
 {	
 	"Sucursal1": [
         "La Boca",
-        "Almirante Brown 567"
-    ],
-    "Sucursal2": [
-        "San Telmo",
-        "Defensa 1234"
-    ],
-    "Sucursal3": [
-        "Barracas",
-        "Montes de Oca 2345"
+        "Caminito 1234"
     ],
 
-    "img1": "CAC_Proyecto/Src/img/img_sucursal1.jpg",
+    "Sucursal2": [
+        "San Telmo",
+        "Plaza Dorrego 1234"
+    ],
+
+    "Sucursal3": [
+        "Barracas",
+        "Plaza Colombia 1234"
+    ],
+    
+    "img1": "https://pixabay.com/es/images/search/caminito/",
     "img2": "CAC_Proyecto/Src/img/img_sucursal1.jpg",
     "img3": "CAC_Proyecto/Src/img/img_sucursal3.jpg"
 }
