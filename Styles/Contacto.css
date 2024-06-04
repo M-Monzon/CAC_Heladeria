@@ -6,9 +6,11 @@ header, footer {
     text-align: center;
 }
 
+/*
 .contacto {
     background-image: (../Src/img/Fondo-contactos.png);
 }
+*/
 
 header {
     background-color: #000000;
@@ -38,11 +40,6 @@ header {
     border: none;
 }
 
-#Maps {
-    width: 100%;
-    height: 400px;
-}
-
 
 /* DOM */
 
@@ -55,22 +52,22 @@ header {
     align-items: center;
 }
 
-#Maps.article {
+#Maps article {
     background-color: cadetblue;
     border-radius: 5px;
     padding: 15px;
     margin: 5px;
 }
 
-#Maps.article img {
+#Maps article img {
     border-radius: 999px;
     width: 100%;
 }
-#Maps.article p {
+#Maps article p {
     text-align: center;
 }
 
-#Maps.botonera {
+.botonera {
     position: fixed;
     bottom: 15px;
     right: 15px;
@@ -86,14 +83,10 @@ header {
 }
 
 
-
-
-
-
-
-
-
 /* DOM */
+
+
+
 footer {
     color: #a296ac;
     background-color: #171D1C;

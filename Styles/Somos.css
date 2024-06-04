@@ -1,0 +1,13 @@
+
+
+p {
+    color: rgb(253, 253, 253);               /* Cambia el color del texto a azul */
+    font-size: 18px;           /* Cambia el tamaño del texto a 18px */
+    font-family: Arial, sans-serif;  /* Cambia la fuente del texto */
+    margin-top: 20px;          /* Agrega un margen superior de 20px */
+    padding: 10px;             /* Agrega un padding de 10px alrededor del párrafo */
+    border: 1px solid black;   /* Agrega un borde de 1px sólido negro alrededor del párrafo */
+    background-color: #f0f0f0; /* Cambia el color de fondo del párrafo */
+    background-image: url(../Src/img/Fondo-contactos.png);
+  }
+  

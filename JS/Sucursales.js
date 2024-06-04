@@ -14,6 +14,8 @@ original.remove() // Clono y elimino el original
 //Funciones
 
 function fsuc1() {
+    let contenedor = document.querySelector("#Contenedor");
+
     fetch("https://M-Monzon.github.io/CAC_Proyecto/datos.json")
     .then(response => response.json()) // Convierte a JSON
     .then(data => { 
@@ -34,7 +36,9 @@ function fsuc1() {
     .catch(error => console.log("Ocurrió un error!" + error));
 }
 
-function fsuc2() {    
+function fsuc2() { 
+    let contenedor = document.querySelector("#Contenedor");
+    
     fetch("https://M-Monzon.github.io/CAC_Proyecto/datos.json")
     .then(response => response.json()) // Convierte a JSON
     .then(data => { 
@@ -55,7 +59,9 @@ function fsuc2() {
     .catch(error => console.log("Ocurrió un error!" + error));
 }
 
-function fsuc3() {    
+function fsuc3() {
+    let contenedor = document.querySelector("#Contenedor");
+
     fetch("https://M-Monzon.github.io/CAC_Proyecto/datos.json")
     .then(response => response.json()) // Convierte a JSON
     .then(data => { 

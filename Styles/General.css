@@ -32,7 +32,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
-    /*min-height: 10vh;*/
+    min-height: 5vh;
     color: #ffffff;
   }
 
@@ -45,17 +45,14 @@ nav {
     background-color: #242627;
     justify-content: space-between;
     align-items: center;
-    /*position: sticky;
-    top: 0;*/
-}
-
-nav img {
-    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 2
 }
 
 nav ul {
-    list-style-type: none; /* Con esto me borra los puntitos de la lista*/
     display: flex;
+    list-style-type: none; /* Con esto me borra los puntitos de la lista*/
 }
 
 a {
@@ -69,7 +66,6 @@ a {
     
     margin-right: 10px; /* Para que tenga el efecto de separacion entre sí */
     border-radius: 5px; /* Redondeo los bordes*/
-    border-top-right-radius: 15px; /* Le suma un poco mas a ese borde para darle efecto */
     transition: 0.3s all; /* el efecto de transicion */
 }
 
@@ -77,10 +73,11 @@ a {
     background-color: #ffad01;
     color: #000000; 
     border-radius: 5px;
-    border-top-right-radius: 15px
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     padding: 0; /* Saca el padding para ponerselo a los contenedores hijos */
     background-color: #835aa5;
   }
@@ -91,12 +88,13 @@ main h3 { /* Diferencio de h2 para romper las bolas */
 }
 
 main h2 {
-    background-color: #f9aa25;
+    background-color: #360856;
     color: #f3f7f6;
 }
 
 #mycarrousel {
     min-height: 50vh; /* tamaño minimo del 50% de la pagina */
+    z-index: 1
 }
 
 main #Ofertas {
