@@ -1,21 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-} /* Con esto limpio todos los estilos*/
+} 
 
-/*
-COLORES: Puedo poner los colores como variables y usarlos directamente poniendo el nombre (Ver JavaS o CSS)
-*/
 
 body {
-    background-color: antiquewhite;  /* Pongo un color sutil para tener en todo el documento*/
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/* Pongo una fuente generica para todo el documento */
-}
+    background-color: antiquewhite;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 
 header, nav, main, footer {
     padding: 25px;
-} /* Con esto todos los contenedores tienen la misma tabulacion. Despues lo puedo ir ajustando */
+} 
 
 header, footer, main {
     text-align: center;
@@ -46,24 +42,24 @@ nav {
 
 ul {
     display: flex;
-    list-style-type: none; /* Con esto me borra los puntitos de la lista*/
+    list-style-type: none; 
 }
 
 a {
-    text-decoration: none; /* Para que no se subrayen los links*/
+    text-decoration: none; 
 }
 
-.button { /* Voy a usar un solo tipo de boton, lo aplico poniendo class en el HTML*/
+.button { 
     background-color:#835aa5;
     color: #f3f7f6;
-    padding: 10px; /* Para darle margen*/
+    padding: 10px; 
     
-    margin-right: 10px; /* Para que tenga el efecto de separacion entre sí */
-    border-radius: 5px; /* Redondeo los bordes*/
-    transition: 0.3s all; /* el efecto de transicion */
+    margin-right: 10px;
+    border-radius: 5px; 
+    transition: 0.3s all; 
 }
 
-.button:hover { /* El hover es para cuando le pongo el mouse encima */
+.button:hover {
     background-color: #ffad01;
     color: #360856; 
     border-radius: 5px;
@@ -96,7 +92,7 @@ main h2 {
 }
 
 #mycarrousel {
-    min-height: 50vh; /* tamaño minimo del 50% de la pagina */
+    min-height: 50vh;
     z-index: 1
 }
 
@@ -121,7 +117,7 @@ main #Productos .contenido article {
     font-size: 1em;
 
     display: flex;
-    flex-direction: column; /* para que sus elementos se pongan en columna */
+    flex-direction: column; 
 }
 
 main #Productos .contenido article img {
